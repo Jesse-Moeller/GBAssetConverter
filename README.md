@@ -22,5 +22,5 @@ Using python 3 install these packages with pip:
   <code>-v</code> Verbose output (not really sure what I'm doing with this, just kind of larping).
 
 ## To Do
-  1. Develop better workflow fore tilemaps
+  1. Develop better workflow for tilemaps
   
