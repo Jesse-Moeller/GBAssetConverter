@@ -1,4 +1,3 @@
-from typing import Tuple
 from PIL import Image
 import numpy as np
 import sys
@@ -34,7 +33,6 @@ def handle_inputs(args : list) -> dict:
         "single_file" : False,
         "directory" : False,
         "preview" : False,
-        "preview_save" : False,
         "recursive" : False,
         "verbose" : False,
         "output_dir" : ""
@@ -55,7 +53,7 @@ def handle_inputs(args : list) -> dict:
     options = args[2:-1]
 
     for arg in options:
-        if arg not in ['-p','-s','-r','-v']:
+        if arg not in ['-p','-r','-s','-v']:
             print(f"Warning: Argument {arg} not recognized.")
 
     if '-p' in options:
