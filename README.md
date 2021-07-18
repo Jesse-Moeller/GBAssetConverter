@@ -10,8 +10,8 @@ Using python 3 install these packages with pip:
 
 ## Execution
 
-<code> python .\gbac.py {image or directory} {options} {directory}
-  
+<code> python .\gbac.py {image or directory} {options} {directory} </code>
+
 ### options:
   <code>-p</code> Preview any files as they are being converted.
   
