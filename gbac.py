@@ -34,6 +34,7 @@ def handle_inputs(args : list) -> dict:
         "directory" : False,
         "preview" : False,
         "recursive" : False,
+        "save" : False,
         "verbose" : False,
         "output_dir" : ""
     }
