@@ -1,5 +1,6 @@
 from PIL import Image
 import numpy as np
+from pathlib import Path
 import sys
 import os
 
@@ -79,7 +80,7 @@ def handle_inputs(args : list) -> dict:
     if '-v' in options:
         input_dict["verbose"] = True
 
-    input_dict["output_dir"] = args[-1]
+    input_dict["output_dir"] = args[-1]+'\\'
     
     return input_dict
 
@@ -128,17 +129,8 @@ class WorkTree:
             dir._print()
     
     def convert(self, input_dict):
-        if not os.path.exists(self.out_path):
-            os.mkdir(self.out_path)
-        # except OSError:
-        #     print(f"Error: '{self.out_path}' is not a valid directory name.")
-        #     quit()
-        # except FileNotFoundError:
-        #     print(f"Error: Cannot find '{self.out_path}'.")
-        #     quit()
-        # except FileExistsError:
-        #     if input_dict["verbose"]:
-        #         print("directory {self.out_path} already exists")
+        if not os.path.exists(os.path.dirname(self.out_path)):
+            os.makedirs(os.path.dirname(self.out_path))
 
         for image_path in self.image_paths:
             process_image(image_path, input_dict)
