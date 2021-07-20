@@ -129,8 +129,8 @@ class WorkTree:
             dir._print()
     
     def convert(self, input_dict):
-        if not os.path.exists(os.path.dirname(self.out_path)):
-            os.makedirs(os.path.dirname(self.out_path))
+        if not os.path.exists(self.out_path):
+            os.mkdir(self.out_path)
 
         for image_path in self.image_paths:
             process_image(image_path, input_dict)
