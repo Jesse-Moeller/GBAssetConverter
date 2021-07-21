@@ -14,6 +14,10 @@ Using python 3 install these packages with pip:
 
 <code> python .\gbac.py {image or directory} {options} {directory} </code>
 
+For example, you might try
+
+<code> python .\gbac.py .\test\ -r -s .\assets\ </code>
+
 ### options:
 
   <code>-p</code> Preview any files as they are being converted.
