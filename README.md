@@ -20,11 +20,11 @@ For example, you might try
 
 ### options:
 
-  <code>-p</code> Preview any files as they are being converted.
+  <code>-p</code> Preview any image files as they are being converted.
   
-  <code>-r</code> Apply conversions to all images in all subfolders.
+  <code>-r</code> Apply conversions to all relevant files (for now, just images) in all subfolders.
   
-  <code>-s</code> Save copy of the image as it would appear on the GB screen.
+  <code>-s</code> Save a copy of the converted image in the original image format next to its GBDK encoding.
   
   <code>-v</code> Verbose output (not really sure what I'm doing with this, just kind of larping).
 
