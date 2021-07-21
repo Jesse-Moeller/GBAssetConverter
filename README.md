@@ -1,6 +1,6 @@
 # GB Asset Converter
 
-This repo contains a script I wrote which converts (probably) any image into a gbdk compatible sprite (.c) file.
+GBAC is a command line script to convert Game Boy assets (images, tilemaps and sound) into their less-operable GBDK .C encodings. The main idea being that this gives the user the ability to edit the tangible assets however they so choose, leaving conversion to .C encodings as a build step, rather than force the user to edit assets with an editor that is GBDK friendly out-of-the-box.
 
 ## Requirements
 
