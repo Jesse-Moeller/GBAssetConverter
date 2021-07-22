@@ -4,7 +4,7 @@ GBAC is a command line script to convert Game Boy assets (images, tilemaps and s
 
 ## Requirements
 
-Using python 3 install these packages with pip:
+Install Python 3 with pip, then execute:
 
 <code> pip install pillow </code>
 
